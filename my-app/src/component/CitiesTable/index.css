@@ -1,0 +1,83 @@
+/* General styles for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #f4f4f4;
+}
+
+th {
+  background-color: #007BFF; /* Blue header background */
+  color: #ffffff; /* White text color */
+  position: sticky;
+  top: 0; /* Stick the header at the top */
+  z-index: 1; /* Ensure it stays on top of the table body */
+}
+
+/* Table row styles */
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+/* Link styling */
+a {
+  color: #007BFF; /* Blue color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Dropdown styling */
+select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark gray text */
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+select:focus {
+  border-color: #007BFF; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Loader styling */
+h4 {
+  text-align: center;
+  color: #007BFF; /* Blue color for loader text */
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  select {
+    font-size: 14px;
+  }
+}
